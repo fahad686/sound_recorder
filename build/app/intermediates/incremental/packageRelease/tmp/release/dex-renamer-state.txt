@@ -1,0 +1,4 @@
+#Sat Jan 04 04:47:56 PKT 2025
+base.0=/Users/macbook/Desktop/Flutter recorder and player app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

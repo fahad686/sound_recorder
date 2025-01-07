@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "xyz.canardoux.fluttersound.flutter_sound-mergeReleaseResources-27:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/macbook/.gradle/caches/transforms-3/0d9cf90d33b0d2fb6bcd318d06e7b982/transformed/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "xyz.canardoux.fluttersound.flutter_sound-merged_res-29:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/macbook/.gradle/caches/transforms-3/0d9cf90d33b0d2fb6bcd318d06e7b982/transformed/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

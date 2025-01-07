@@ -1,0 +1,37 @@
+com.example.ftalk_recorder.app-jetified-savedstate-1.2.1-0 /Users/macbook/.gradle/caches/transforms-3/010887bb3359843376c02ecf4bf2ef43/transformed/jetified-savedstate-1.2.1/res
+com.example.ftalk_recorder.app-media-1.4.1-1 /Users/macbook/.gradle/caches/transforms-3/0641f376a146fa6702c17b115340b86a/transformed/media-1.4.1/res
+com.example.ftalk_recorder.app-core-runtime-2.2.0-2 /Users/macbook/.gradle/caches/transforms-3/08235bf0a8760a790ea7b8b4eab82236/transformed/core-runtime-2.2.0/res
+com.example.ftalk_recorder.app-appcompat-1.2.0-3 /Users/macbook/.gradle/caches/transforms-3/0d9cf90d33b0d2fb6bcd318d06e7b982/transformed/appcompat-1.2.0/res
+com.example.ftalk_recorder.app-jetified-profileinstaller-1.3.1-4 /Users/macbook/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/res
+com.example.ftalk_recorder.app-jetified-window-1.2.0-5 /Users/macbook/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/res
+com.example.ftalk_recorder.app-jetified-activity-1.8.1-6 /Users/macbook/.gradle/caches/transforms-3/3e4063b07db37bd08626b21245b0f82d/transformed/jetified-activity-1.8.1/res
+com.example.ftalk_recorder.app-jetified-lifecycle-livedata-core-ktx-2.7.0-7 /Users/macbook/.gradle/caches/transforms-3/4befdc7f9fed1e5c6647eae72672d219/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/res
+com.example.ftalk_recorder.app-lifecycle-viewmodel-2.7.0-8 /Users/macbook/.gradle/caches/transforms-3/52dfd6d7c21c1e36dbdf0d304093d642/transformed/lifecycle-viewmodel-2.7.0/res
+com.example.ftalk_recorder.app-jetified-startup-runtime-1.1.1-9 /Users/macbook/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/res
+com.example.ftalk_recorder.app-jetified-core-ktx-1.13.1-10 /Users/macbook/.gradle/caches/transforms-3/58accd456bc756075136cc5a7dae18d3/transformed/jetified-core-ktx-1.13.1/res
+com.example.ftalk_recorder.app-jetified-lifecycle-process-2.7.0-11 /Users/macbook/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/res
+com.example.ftalk_recorder.app-jetified-annotation-experimental-1.4.0-12 /Users/macbook/.gradle/caches/transforms-3/6707c561045b071954f9f1d8398a2530/transformed/jetified-annotation-experimental-1.4.0/res
+com.example.ftalk_recorder.app-jetified-core-1.0.0-13 /Users/macbook/.gradle/caches/transforms-3/6dde453803d512b3f23cc981e264e9e0/transformed/jetified-core-1.0.0/res
+com.example.ftalk_recorder.app-lifecycle-livedata-2.7.0-14 /Users/macbook/.gradle/caches/transforms-3/9c28b5c7a2d23237247570dbf8382af1/transformed/lifecycle-livedata-2.7.0/res
+com.example.ftalk_recorder.app-jetified-appcompat-resources-1.2.0-15 /Users/macbook/.gradle/caches/transforms-3/9def99a9ee78a86149d5455ce2e66b46/transformed/jetified-appcompat-resources-1.2.0/res
+com.example.ftalk_recorder.app-lifecycle-livedata-core-2.7.0-16 /Users/macbook/.gradle/caches/transforms-3/9ec76326f098fb11057ae8a1fda52a48/transformed/lifecycle-livedata-core-2.7.0/res
+com.example.ftalk_recorder.app-fragment-1.7.1-17 /Users/macbook/.gradle/caches/transforms-3/a49cd171355a6a39687e69f028c8bcbc/transformed/fragment-1.7.1/res
+com.example.ftalk_recorder.app-jetified-window-java-1.2.0-18 /Users/macbook/.gradle/caches/transforms-3/bf78d940cc78ca45c77421e3af64376e/transformed/jetified-window-java-1.2.0/res
+com.example.ftalk_recorder.app-core-1.13.1-19 /Users/macbook/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/res
+com.example.ftalk_recorder.app-lifecycle-runtime-2.7.0-20 /Users/macbook/.gradle/caches/transforms-3/c8996eb6ce8efabee1883fe1486006c9/transformed/lifecycle-runtime-2.7.0/res
+com.example.ftalk_recorder.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-21 /Users/macbook/.gradle/caches/transforms-3/ca2eed4266fd24517e583e6618aa3924/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/res
+com.example.ftalk_recorder.app-jetified-flutter_sound_core-9.17.8-22 /Users/macbook/.gradle/caches/transforms-3/fdaadb2352755a24e8bcbbc57bca2df0/transformed/jetified-flutter_sound_core-9.17.8/res
+com.example.ftalk_recorder.app-jetified-tracing-1.2.0-23 /Users/macbook/.gradle/caches/transforms-3/fee79d0d8ef3af5dbc14ef6d22d028cf/transformed/jetified-tracing-1.2.0/res
+com.example.ftalk_recorder.app-main-24 /Users/macbook/Desktop/Flutter recorder and player app/android/app/src/main/res
+com.example.ftalk_recorder.app-release-25 /Users/macbook/Desktop/Flutter recorder and player app/android/app/src/release/res
+com.example.ftalk_recorder.app-pngs-26 /Users/macbook/Desktop/Flutter recorder and player app/build/app/generated/res/pngs/release
+com.example.ftalk_recorder.app-resValues-27 /Users/macbook/Desktop/Flutter recorder and player app/build/app/generated/res/resValues/release
+com.example.ftalk_recorder.app-packageReleaseResources-28 /Users/macbook/Desktop/Flutter recorder and player app/build/app/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.example.ftalk_recorder.app-packageReleaseResources-29 /Users/macbook/Desktop/Flutter recorder and player app/build/app/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.example.ftalk_recorder.app-merged-not-compiled-resources-30 /Users/macbook/Desktop/Flutter recorder and player app/build/app/intermediates/merged-not-compiled-resources/release
+com.example.ftalk_recorder.app-merged_res-31 /Users/macbook/Desktop/Flutter recorder and player app/build/app/intermediates/merged_res/release
+com.example.ftalk_recorder.app-packaged_res-32 /Users/macbook/Desktop/Flutter recorder and player app/build/file_picker/intermediates/packaged_res/release
+com.example.ftalk_recorder.app-packaged_res-33 /Users/macbook/Desktop/Flutter recorder and player app/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/release
+com.example.ftalk_recorder.app-packaged_res-34 /Users/macbook/Desktop/Flutter recorder and player app/build/flutter_sound/intermediates/packaged_res/release
+com.example.ftalk_recorder.app-packaged_res-35 /Users/macbook/Desktop/Flutter recorder and player app/build/path_provider_android/intermediates/packaged_res/release
+com.example.ftalk_recorder.app-packaged_res-36 /Users/macbook/Desktop/Flutter recorder and player app/build/permission_handler_android/intermediates/packaged_res/release
