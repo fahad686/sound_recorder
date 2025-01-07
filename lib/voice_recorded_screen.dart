@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_sound/public/flutter_sound_recorder.dart';
@@ -7,7 +6,7 @@ import 'package:permission_handler/permission_handler.dart';
 import 'file_screen.dart';
 
 class RecorderScreen extends StatefulWidget {
-  const RecorderScreen({super.key});
+  const RecorderScreen({Key? key}) : super(key: key);
 
   @override
   _RecorderScreenState createState() => _RecorderScreenState();
@@ -17,6 +16,7 @@ class _RecorderScreenState extends State<RecorderScreen> {
   FlutterSoundRecorder _recorder = FlutterSoundRecorder();
   bool _isRecording = false;
   String _filePath = '';
+  List<String> _recordings = [];
 
   @override
   void initState() {
@@ -27,19 +27,15 @@ class _RecorderScreenState extends State<RecorderScreen> {
   Future<void> _initializeRecorder() async {
     await _recorder.openRecorder();
     if (await Permission.microphone.request().isDenied) {
-      if (await Permission.microphone.isPermanentlyDenied) {
-        openAppSettings();
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Microphone permission is required.")),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Microphone permission is required.")),
+      );
     }
   }
 
   @override
-  void dispose() async {
-    await _recorder.closeRecorder();
+  void dispose() {
+    _recorder.closeRecorder();
     super.dispose();
   }
 
@@ -49,40 +45,21 @@ class _RecorderScreenState extends State<RecorderScreen> {
       String folderPath = '${appDocDir!.path}/Ftalk Record';
       await Directory(folderPath).create(recursive: true);
 
-      _filePath = '$folderPath/temp_record.wav'; // Use WAV instead of MP3
-
-      try {
-        await _recorder.startRecorder(
-          toFile: _filePath,
-         // codec: Codec.wav, // Using WAV codec
-        );
-        setState(() {
-          _isRecording = true;
-        });
-      } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Error starting recorder: $e")),
-        );
-      }
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Microphone permission is required.")),
-      );
+      _filePath = '$folderPath/temp_record.wav'; // Use WAV format
+      await _recorder.startRecorder(toFile: _filePath);
+      setState(() {
+        _isRecording = true;
+      });
     }
   }
 
   Future<void> _stopRecording() async {
-    try {
-      await _recorder.stopRecorder();
-      _showSaveDialog();
-      setState(() {
-        _isRecording = false;
-      });
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Failed to stop recording: $e")),
-      );
-    }
+    await _recorder.stopRecorder();
+    setState(() {
+      _isRecording = false;
+      _recordings.add(_filePath);
+    });
+    _showSaveDialog();
   }
 
   void _showSaveDialog() {
@@ -97,9 +74,7 @@ class _RecorderScreenState extends State<RecorderScreen> {
         ),
         actions: [
           TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
+            onPressed: () => Navigator.pop(context),
             child: Text('Cancel'),
           ),
           TextButton(
@@ -108,17 +83,13 @@ class _RecorderScreenState extends State<RecorderScreen> {
               if (newFileName.isNotEmpty) {
                 Directory? appDocDir = await getExternalStorageDirectory();
                 String folderPath = '${appDocDir!.path}/Ftalk Record';
-                String newPath = '$folderPath/$newFileName.mp3';
-
-                if (await File(_filePath).exists()) {
-                  File(_filePath).renameSync(newPath);
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Recording file not found.")),
-                  );
-                }
+                String newPath = '$folderPath/$newFileName.wav';
+                File(_filePath).renameSync(newPath);
+                setState(() {
+                  _recordings[_recordings.length - 1] = newPath;
+                });
+                Navigator.pop(context);
               }
-              Navigator.pop(context);
             },
             child: Text('Save'),
           ),
@@ -143,7 +114,9 @@ class _RecorderScreenState extends State<RecorderScreen> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => FileListScreen()),
+                  MaterialPageRoute(
+                    builder: (context) => FileListScreen(recordings: _recordings),
+                  ),
                 );
               },
               child: Text("View Recordings"),
